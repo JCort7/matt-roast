@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Matt's Page</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #333;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #aa0000;
+    }
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+      margin: 30px 0;
+    }
+
+    .image-container img {
+      width: 300px;
+      height: auto;
+    }
+
+    .red-x {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .red-x::before,
+    .red-x::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      background-color: red;
+      top: 50%;
+      left: 0;
+    }
+
+    .red-x::before {
+      transform: rotate(45deg);
+    }
+
+    .red-x::after {
+      transform: rotate(-45deg);
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 1.2em;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 50px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Matt is a stupid dumb dumb</h1>
+  <h2>KU sucks</h2>
+
+  <div class="image-container">
+    <img src="https://upload.wikimedia.org/wikipedia/en/6/6d/Kansas_Jayhawks_logo.svg" alt="Kansas Jayhawks">
+    <div class="red-x"></div>
+  </div>
+
+  <br>
+
+  <button onclick="alert('you stupid dumb dumb')">Free Giants tickets</button>
+</body>
+</html>
